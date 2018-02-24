@@ -1,0 +1,15 @@
+<h1>Please select products to create list and generate report </h1>
+<br><br>
+
+
+<ul class="list-group" style="width: 50%;">
+  <li class="list-group-item">
+    <span class="badge"><%= Handy.count %></span>
+    <%= link_to "Handy ", handies_path,  class: 'btn btn-primary btn-lg' %>
+  </li>
+  <li class="list-group-item">
+    <span class="badge"><%= Eflashssd.count %></span>
+    <%= link_to "E-Flash SSD ", eflashssds_path,  class: 'btn btn-primary btn-lg' %>
+  </li>
+  
+</ul>

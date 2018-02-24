@@ -1,0 +1,218 @@
+  <p id="notice"><%= notice %></p>
+
+
+<h1>E-Flash-SSD</h1>
+<%= form_tag eflashssds_path, :method => :get do %>
+  
+    <%= text_field_tag :search, params[:search] , class: "search" %>
+    <%= submit_tag "Search ", :name => nil  %>
+<% end %>
+
+
+
+<div class="media">
+    <div class="media-body">
+      <table class="table table-hover" >
+  <thead>
+    <tr>
+      <th id="hide">ID</th>
+      <th>Pccitem</th>
+      <th>Receivedate</th>
+      <th id="hide">prodpn</th>
+      <th>Solution</th>
+      <th>Flash</th>
+      <th id="hide">desc</th>
+      <th>Capacity</th>
+      <th id="hide">fwvversion</th>
+      <th>Qual</th>
+      <th>Q'ty</th>
+      <th id="hide">Plan date</th>
+      <th>Startdate</th>
+      <th>Finishdate</th>
+      <th>Result</th>
+      <th id="hide">Status</th>
+      <th id="hide">Cold Boot & Power Failure</th>
+      <th>Owner</th>
+      <th id="hide">Qual Report</th>  
+      <th>Remark</th>
+      <th id="hide">expl</th>
+
+      <th id="hide">prodname</th>
+      <th id="hide">pcbvers</th>
+      <th id="hide">rpname</th>
+      <th id="hide">rpdate</th>
+      <th id="hide">approvename</th>
+      <th id="hide">pc1os</th>
+      <th id="hide">pc1mb</th>
+      <th id="hide">pc1vendor</th>
+      <th id="hide">pc1chip</th>
+      <th id="hide">pc1bios</th>
+      <th id="hide">pc1interface</th>
+      <th id="hide">pc1basic</th>
+      <th id="hide">pc1comp32</th>
+      <th id="hide">pc1burnin</th> 
+      <th id="hide">pc1wboot</th> 
+      <th id="hide">pc1cboot</th> 
+      <th id="hide">pc1fat</th>
+      <th id="hide">pc1fat32</th>
+      <th id="hide">pc1ntfs</th>
+      <th id="hide">pc1exfat</th>
+      <th id="hide">pc1result</th>
+      <th id="hide">pc1led</th>
+      <th id="hide">pc1inos1</th>
+      <th id="hide">pc1inos2</th>
+      <th id="hide">pc1inos3</th>
+      <th id="hide">pc1inos4</th>
+      <th id="hide">pc1inos5</th>
+      <th id="hide">pc2os</th>
+      <th id="hide">pc2mb</th>
+      <th id="hide">pc2vendor</th>
+      <th id="hide">pc2chip</th>
+      <th id="hide">pc2bios</th>      
+      <th id="hide">pc2interface</th>
+      <th id="hide">pc2basic</th>
+      <th id="hide">pc2result</th>
+      <th id="hide">pc2led</th>
+      <th id="hide">pc2inos1</th>
+      <th id="hide">pc2inos2</th>
+      <th id="hide">pc2inos3</th>
+      <th id="hide">pc2inos4</th>
+      <th id="hide">pc2inos5</th>
+      <th id="hide">pc2inos6</th>
+      <th id="hide">pc2inos7</th>
+      <th id="hide">pc2inos8</th>
+      <th id="hide">pc3os</th>
+      <th id="hide">pc3mb</th>
+      <th id="hide">pc3vendor</th>
+      <th id="hide">pc3chip</th>
+      <th id="hide">pc3bios</th>
+      <th id="hide">pc3interface</th>
+      <th id="hide">pc4os</th>
+      <th id="hide">pc4mb</th>
+      <th id="hide">pc4vendor</th>
+      <th id="hide">pc4chip</th>
+      <th id="hide">pc4bios</th>
+      <th id="hide">pc4interface</th>
+      
+     
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody id="sortable" >
+    <% @eflashssds.each do |eflashssd| %>
+      <tr>
+        <td id="hide"><%= eflashssd.id %></td>
+        <td><%= eflashssd.pccitem %></td>
+        <td><%= eflashssd.receivedate  %></td>
+        <th id="hide"><%= eflashssd.prodpn %></th>
+        <td><%= eflashssd.solution %></td>
+        <th><%= eflashssd.ftype %></th>
+        <th id="hide"><%= eflashssd.desc %></th>
+        <td><%= eflashssd.capacity %></td>
+        <th id="hide"><%= eflashssd.fwvversion %></th>
+        <td><%= eflashssd.qual %></td>
+        <td ><%= eflashssd.qty %></td>
+        <td id="hide"><%= eflashssd.plandate %></td>
+        <td><%= eflashssd.startdate %></td>
+        <td><%= eflashssd.finishdate %></td>
+        <th><%= eflashssd.testres %></th>
+        <th id="hide"><%= eflashssd.status %></th>
+        <th id="hide"><%= eflashssd.coldbootfail %></th>        
+        <td><%= eflashssd.owner %></td>
+        <td id="hide"><%= eflashssd.qtreport %></td>
+        <td><%= eflashssd.remark %></td>
+      <th id="hide"><%= eflashssd.expl %></th> 
+
+      <th id="hide"><%= eflashssd.prodname %></th>
+      <th id="hide"><%= eflashssd.pcbvers %></th>
+      <th id="hide"><%= eflashssd.rpname %></th>
+      <th id="hide"><%= eflashssd.rpdate %></th>
+      <th id="hide"><%= eflashssd.approvename %></th>
+      <th id="hide"><%= eflashssd.pc1os %></th>
+      <th id="hide"><%= eflashssd.pc1mb %></th>
+      <th id="hide"><%= eflashssd.pc1vendor %></th>
+      <th id="hide"><%= eflashssd.pc1chip %></th>
+      <th id="hide"><%= eflashssd.pc1bios %></th>
+      <th id="hide"><%= eflashssd.pc1interface %></th>
+      <th id="hide"><%= eflashssd.pc1basic %></th>
+      <th id="hide"><%= eflashssd.pc1comp32 %></th>
+      <th id="hide"><%= eflashssd.pc1burnin %></th>
+      <th id="hide"><%= eflashssd.pc1wboot %></th>
+      <th id="hide"><%= eflashssd.pc1cboot %></th>
+      <th id="hide"><%= eflashssd.pc1fat %></th>
+      <th id="hide"><%= eflashssd.pc1fat32 %></th>
+      <th id="hide"><%= eflashssd.pc1ntfs %></th>
+      <th id="hide"><%= eflashssd.pc1exfat %></th>
+      <th id="hide"><%= eflashssd.pc1result %></th>
+      <th id="hide"><%= eflashssd.pc1led %></th>
+      <th id="hide"><%= eflashssd.pc1inos1 %></th>
+      <th id="hide"><%= eflashssd.pc1inos2 %></th>
+      <th id="hide"><%= eflashssd.pc1inos3 %></th>
+      <th id="hide"><%= eflashssd.pc1inos4 %></th>
+      <th id="hide"><%= eflashssd.pc1inos5 %></th>
+      <th id="hide"><%= eflashssd.pc2os %></th>
+      <th id="hide"><%= eflashssd.pc2mb %></th>
+      <th id="hide"><%= eflashssd.pc2vendor %></th>
+      <th id="hide"><%= eflashssd.pc2chip %></th>
+      <th id="hide"><%= eflashssd.pc2bios %></th>
+      <th id="hide"><%= eflashssd.pc2interface %></th>
+	    <th id="hide"><%= eflashssd.pc2basic %></th>
+      <th id="hide"><%= eflashssd.pc2result %></th>
+      <th id="hide"><%= eflashssd.pc2led %></th>
+      <th id="hide"><%= eflashssd.pc2inos1 %></th>
+      <th id="hide"><%= eflashssd.pc2inos2 %></th>
+      <th id="hide"><%= eflashssd.pc2inos3 %></th>
+      <th id="hide"><%= eflashssd.pc2inos4 %></th>
+      <th id="hide"><%= eflashssd.pc2inos5 %></th>
+      <th id="hide"><%= eflashssd.pc2inos6 %></th>
+      <th id="hide"><%= eflashssd.pc2inos7 %></th>
+      <th id="hide"><%= eflashssd.pc2inos8 %></th>
+      <th id="hide"><%= eflashssd.pc3os %></th>
+      <th id="hide"><%= eflashssd.pc3mb %></th>
+      <th id="hide"><%= eflashssd.pc3vendor %></th>
+      <th id="hide"><%= eflashssd.pc3chip %></th>
+      <th id="hide"><%= eflashssd.pc3bios %></th>
+      <th id="hide"><%= eflashssd.pc3interface %></th>
+      <th id="hide"><%= eflashssd.pc4os %></th>
+      <th id="hide"><%= eflashssd.pc4mb %></th>
+      <th id="hide"><%= eflashssd.pc4vendor %></th>
+      <th id="hide"><%= eflashssd.pc4chip %></th>
+      <th id="hide"><%= eflashssd.pc4bios %></th>
+      <th id="hide"><%= eflashssd.pc4interface %></th>
+    
+     
+      <!-- -->
+      <% if current_user  %>
+        <td><%= link_to 'Show', eflashssd , class: 'btn btn-mini btn-default' %></td>
+        <td><%= link_to 'Edit', edit_eflashssd_path(eflashssd) , class: 'btn btn-mini btn-primary' %></td>
+        <td><%= link_to 'Destroy', eflashssd, method: :delete, data: { confirm: 'Are you sure?' } , class: 'btn btn-mini btn-danger'%></td>
+      </tr>
+    <% end %>
+        <% end %>
+  </tbody>
+</table>
+</div>
+</div>
+
+<br>
+
+
+<%= link_to 'Create new item', new_eflashssd_path , class: 'btn btn-default'%> |
+
+
+<h3>Import CSV file</h3>
+<%= form_tag  import_eflashssds_path , multipart: true do %>
+<%= file_field_tag :file %>
+<%= submit_tag "Upload CSV file"  , class: 'btn btn-default'%>
+<% end %>
+
+
+
+<h3>Export file </h3>
+<%= link_to 'Download CSV', eflashssds_path(format: "csv") , class: 'btn btn-default'%> |
+<%= link_to "Download Excel", eflashssds_path(format: "xls") , class: 'btn btn-default'%>
+
+
+<br><br>
+

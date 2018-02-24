@@ -1,0 +1,537 @@
+
+<%= form_for @handy, html: { multipart: true } do |form| %>
+    <p class="imagefont">
+    <%= form.label :image %>
+    <%= form.file_field :image  %>
+   
+    <%= form.label :image1 %>
+    <%= form.file_field :image1  %>
+
+    <%= form.label :image2 %>
+    <%= form.file_field :image2  %>
+
+    <%= form.label :image3 %>
+    <%= form.file_field :image3  %>
+  </p>
+
+
+
+<%= form_for(handy) do |f| %>
+  <% if handy.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(handy.errors.count, "error") %> prohibited this handy from being saved:</h2>
+
+      <ul>
+      <% handy.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= f.label :id %>
+    <%= f.number_field :id , class: 'width'%> 
+  </div>
+
+  <div class="field">
+    <%= f.label :item %>
+    <%= f.number_field :item , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :pccitem %>
+    <%= f.number_field :pccitem , class: 'width'%>
+  </div>
+
+  <div class="field" >
+    <%= f.label :receivedate %>
+    <%= f.text_field :receivedate , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :startdate %>
+    <%= f.text_field :startdate , class: 'width'%>  
+    </div>
+
+  <div class="field">
+    <%= f.label :finishdate %>
+    <%= f.text_field :finishdate , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :solution %>
+    <%= f.text_field :solution , class: 'width'%>  
+    </div>
+
+  <div class="field">
+    <%= f.label :schedule %>
+    <%= f.number_field :schedule , class: 'width'%>  
+  </div>
+
+  <div class="field">
+    <%= f.label :capacity %>
+    <%= f.text_field :capacity , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :qual %>
+    <%= f.text_field :qual , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :read %>
+    <%= f.text_field :read , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :write %>
+    <%= f.text_field :write , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :owner %>
+    <%= f.text_field :owner , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :prodname %>
+    <%= f.text_field :prodname , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :prodpn %>
+    <%= f.text_field :prodpn , class: 'width'%>
+  </div>
+   <div class="field">
+    <%= f.label :fwvversion %>
+    <%= f.text_field :fwvversion , class: 'width'%>
+  </div>  
+
+  <div class="field">
+    <%= f.label :Description %>
+    <%= f.text_field :desc , class: 'width'%>
+  </div> 
+
+   <div class="field">
+    <%= f.label :ftype %>
+    <%= f.text_field :ftype , class: 'width'%>
+  </div>
+   <div class="field">
+    <%= f.label :pcbvers %>
+    <%= f.text_field :pcbvers , class: 'width'%>
+  </div>
+   <div class="field">
+    <%= f.label :testresult %>
+    <%= f.text_field :testres , class: 'width'%>
+  </div>
+   <div class="field">
+    <%= f.label :expl %>
+    <%= f.text_field :expl , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :Remark %>
+    <%= f.text_field :remark , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :Reportname %>
+    <%= f.text_field :rpname , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :Reportdate %>
+    <%= f.text_field :rpdate , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :Approvename %>
+    <%= f.text_field :approvename , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC1OS %>
+    <%= f.text_field :pc1os , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC1MB %>
+    <%= f.text_field :pc1mb , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC1Vendor %>
+    <%= f.text_field :pc1vendor , class: 'width'%>  
+    </div>
+
+  <div class="field">
+    <%= f.label :PC1Chip %>
+    <%= f.text_field :pc1chip , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC1BIOS %>
+    <%= f.text_field :pc1bios , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC1basic %>
+    <%= f.text_field :pc1basic , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC1LED %>
+    <%= f.text_field :pc1led , class: 'width'%>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :PC1comp32 %>
+    <%= f.text_field :pc1comp32 , class: 'width'%>  
+    </div>
+
+  <div class="field">
+    <%= f.label :PC1burnin %>
+    <%= f.text_field :pc1burnin , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :pc1fat %>
+    <%= f.text_field :pc1fat , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc1fat32 %>
+    <%= f.text_field :pc1fat32 , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc1ntfs %>
+    <%= f.text_field :pc1ntfs , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc1exfat %>
+    <%= f.text_field :pc1exfat , class: 'width'%>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :cdmread %>
+    <%= f.text_field :cdmread , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :cdmwrite %>
+    <%= f.text_field :cdmwrite , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :rdr512 %>
+    <%= f.text_field :rdr112 , class: 'width'%>  
+    </div>
+  <div class="field">
+    <%= f.label :rdw512 %>
+    <%= f.text_field :rdw112 , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :rdr4k %>
+    <%= f.text_field :rdr4k , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :rdw4k %>
+    <%= f.text_field :rdw4k , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :rdrqd324k %>
+    <%= f.text_field :rdrqd324k , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :rdwqd324k %>
+    <%= f.text_field :rdwqd324k , class: 'width'%>
+  </div>
+
+
+
+  <div class="field">
+    <%= f.label :pc1result %>
+    <%= f.text_field :pc1result , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :PC2OS %>
+    <%= f.text_field :pc2os , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC2MB %>
+    <%= f.text_field :pc2mb , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC2Vendor %>
+    <%= f.text_field :pc2vendor , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC2Chip %>
+    <%= f.text_field :pc2chip , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC2BIOS %>
+    <%= f.text_field :pc2bios , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC2basic %>
+    <%= f.text_field :pc2basic , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC2LED %>
+    <%= f.text_field :pc2led , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC2comp32 %>
+    <%= f.text_field :pc2comp32 , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :PC2burnin %>
+    <%= f.text_field :pc2burnin , class: 'width'%>
+  </div>
+<div class="field">
+    <%= f.label :pc2fat %>
+    <%= f.text_field :pc2fat , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc2fat32 %>
+    <%= f.text_field :pc2fat32 , class: 'width'%>  
+    </div>
+  <div class="field">
+    <%= f.label :pc2ntfs %>
+    <%= f.text_field :pc2ntfs , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc2exfat %>
+    <%= f.text_field :pc2exfat , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :pc2cdmread %>
+    <%= f.text_field :pc2cdmread , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc2cdmwrite %>
+    <%= f.text_field :pc2cdmwrite , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc2rdr512 %>
+    <%= f.text_field :pc2rdr112 , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc2rdw512 %>
+    <%= f.text_field :pc2rdw112 , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc2rdr4k %>
+    <%= f.text_field :pc2rdr4k , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc2rdw4k %>
+    <%= f.text_field :pc2rdw4k , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc2rdrqd324k %>
+    <%= f.text_field :pc2rdrqd324k , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc2rdwqd324k %>
+    <%= f.text_field :pc2rdwqd324k , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :pc2result %>
+    <%= f.text_field :pc2result , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :PC3OS %>
+    <%= f.text_field :pc3os , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC3MB %>
+    <%= f.text_field :pc3mb , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC3Vendor %>
+    <%= f.text_field :pc3vendor , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC3Chip %>
+    <%= f.text_field :pc3chip , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC3BIOS %>
+    <%= f.text_field :pc3bios , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC3basic %>
+    <%= f.text_field :pc3basic , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC3LED %>
+    <%= f.text_field :pc3led , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC3comp32 %>
+    <%= f.text_field :pc3comp32 , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :PC3burnin %>
+    <%= f.text_field :pc3burnin , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc3fat %>
+    <%= f.text_field :pc3fat , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc3fat32 %>
+    <%= f.text_field :pc3fat32 , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc3ntfs %>
+    <%= f.text_field :pc3ntfs , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc3exfat %>
+    <%= f.text_field :pc3exfat , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :pc3cdmread %>
+    <%= f.text_field :pc3cdmread , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc3cdmwrite %>
+    <%= f.text_field :pc3cdmwrite , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc3rdr512 %>
+    <%= f.text_field :pc3rdr112 , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc3rdw512 %>
+    <%= f.text_field :pc3rdw112 , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc3rdr4k %>
+    <%= f.text_field :pc3rdr4k , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc3rdw4k %>
+    <%= f.text_field :pc3rdw4k , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc3rdrqd324k %>
+    <%= f.text_field :pc3rdrqd324k , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc3rdwqd324k %>
+    <%= f.text_field :pc3rdwqd324k , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :pc3result %>
+    <%= f.text_field :pc3result , class: 'width'%>
+  </div>
+   <div class="field">
+    <%= f.label :PC4OS %>
+    <%= f.text_field :pc4os , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :PC4MB %>
+    <%= f.text_field :pc4mb , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC4Vendor %>
+    <%= f.text_field :pc4vendor , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC4Chip %>
+    <%= f.text_field :pc4chip , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC4BIOS %>
+    <%= f.text_field :pc4bios , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC4basic %>
+    <%= f.text_field :pc4basic , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC4LED %>
+    <%= f.text_field :pc4led , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :pc4ext34 %>
+    <%= f.text_field :pc4ext34, class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :pc4result %>
+    <%= f.text_field :pc4result , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :PC5OS %>
+    <%= f.text_field :pc5os , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC5MB %>
+    <%= f.text_field :pc5mb , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC5Vendor %>
+    <%= f.text_field :pc5vendor , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC5Chip %>
+    <%= f.text_field :pc5chip , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC5BIOS %>
+    <%= f.text_field :pc5bios , class: 'width'%>
+  </div>
+  <div class="field">
+    <%= f.label :PC5basic %>
+    <%= f.text_field :pc5basic , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :PC5LED %>
+    <%= f.text_field :pc5led , class: 'width'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :pc5result %>
+    <%= f.text_field :pc5result , class: 'width'%>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+ 
+<% end %>
+<% end %>

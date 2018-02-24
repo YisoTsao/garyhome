@@ -1,0 +1,251 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= link_to 'Download PDF' , eflashssd_url(format: "pdf"), class: 'btn btn-primary'%>
+</h1>
+<h1>Product Description </h1>
+
+<table style="width:50%;">
+  <tr >
+  <td id="desc" >Product Name:</td>
+  <td id="descline" ><%= @eflashssd.prodname %></td>
+  </tr>
+  <tr>
+    <td id="desc" >Product P/N:</td>
+    <td id="descline" ><%= @eflashssd.prodpn %></td>
+  </tr>
+   <tr>
+    <td id="desc" >Firmware Version:</td>
+    <td id="descline"><%= @eflashssd.fwvversion %></td>
+  </tr>
+   <tr>
+    <td id="desc" > Description:</td>
+    <td id="descline"><%= @eflashssd.desc %></td>
+  </tr>
+   <tr>
+    <td id="desc" > Controller:</td>
+    <td id="descline"><%= @eflashssd.solution %></td>
+  </tr>
+   <tr>
+    <td id="desc" >Flash Type:</td>
+    <td id="descline"><%= @eflashssd.ftype %></td>
+  </tr>
+   <tr>
+    <td id="desc" >PCB Version:</td>
+    <td id="descline"><%= @eflashssd.pcbvers %></td>
+  </tr>
+   <tr>
+    <td id="desc" >Qualification:</td>
+    <td id="descline"><%= @eflashssd.qual %></td>
+  </tr>
+   <tr>
+    <td id="desc">Test Result:</td>
+    <td id="descline"><%= @eflashssd.testres %></td>
+  </tr>
+   <tr>
+    <td id="desc" >Explain:</td>
+    <td id="descline"><%= @eflashssd.prodname %> <%= @eflashssd.capacity %> <%= @eflashssd.qual %> <%= @eflashssd.solution %> <%=@eflashssd.ftype %></td>
+  </tr>
+  </table>
+
+
+<h1>Product Description </h1>
+
+<div class="media">
+    <div class="media-body">
+      <table class="table table-hover">
+  <thead>
+    <tr>
+      <th id="indexbarcolor">Pccitem</th>
+      <th id="indexbarcolor">Receivedate</th>
+      <th id="indexbarcolor">Plandate</th>
+      <th id="indexbarcolor">Startdate</th>
+      <th id="indexbarcolor">Finishdate</th>
+      <th id="indexbarcolor">Solution</th>
+      <th id="indexbarcolor">Capacity</th>
+      <th id="indexbarcolor">Qual</th>
+      <th id="indexbarcolor">Owner</th>
+      <th id="indexbarcolor">Remark</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= @eflashssd.pccitem %></td>
+        <td><%= @eflashssd.receivedate  %></td>
+        <td><%= @eflashssd.plandate  %></td>
+        <td><%= @eflashssd.startdate %></td>
+        <td><%= @eflashssd.finishdate %></td>
+        <td><%= @eflashssd.solution %></td>
+        <td><%= @eflashssd.capacity %></td>
+        <td><%= @eflashssd.qual %></td>
+        <td><%= @eflashssd.owner %></td>
+        <td><%= @eflashssd.remark %></td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+<h1>M/B Description </h1>
+<div class="media">
+    <div class="media-body">
+      <table class="table table-hover">
+  <thead>
+    <tr>
+      <th id="indexbarcolor">PC</th>
+      <th id="indexbarcolor">OS</th>
+      <th id="indexbarcolor">M/B</th>
+      <th id="indexbarcolor">Vendor</th>
+      <th id="indexbarcolor">Chip</th>
+      <th id="indexbarcolor">BIOS</th>
+      <th id="indexbarcolor">Interface</th>
+      <th id="indexbarcolor">Basic Test</th>
+      <th id="indexbarcolor">LED</th>
+      <th id="indexbarcolor">Comp32</th>
+      <th id="indexbarcolor">Burnin</th>
+     <!-- <th id="indexbarcolor">FAT</th> -->
+      <th id="indexbarcolor">FAT32</th>
+      <th id="indexbarcolor">NTFS</th>
+      <th id="indexbarcolor">Warm boot</th>
+      <th id="indexbarcolor">Cold boot</th>
+      <th id="indexbarcolor">OS 1</th>
+      <th id="indexbarcolor">OS 2</th>
+      <th id="indexbarcolor">OS 3</th>
+      <th id="indexbarcolor">OS 4</th>
+      <th id="indexbarcolor">OS 5</th>
+      <th id="indexbarcolor">OS 6</th>
+      <th id="indexbarcolor">OS 7</th>
+      <th id="indexbarcolor">OS 8</th>
+     <!-- <th id="indexbarcolor">exFAT</th> -->
+      <th id="indexbarcolor">Result</th>
+      <th  id="indexbarcolor" colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td>1</th>
+        <td><%= @eflashssd.pc1os %></td>
+        <td><%= @eflashssd.pc1mb %></td>
+        <td><%= @eflashssd.pc1vendor  %></td>
+        <td><%= @eflashssd.pc1chip %></td>
+        <td><%= @eflashssd.pc1bios %></td>
+        <td><%= @eflashssd.pc1interface %></td>
+        <td><%= @eflashssd.pc1basic %></td>
+        <td><%= @eflashssd.pc1led %></td>
+        <td><%= @eflashssd.pc1comp32 %></td>
+        <td><%= @eflashssd.pc1burnin %></td>
+        <!-- <td><%= @eflashssd.pc1fat %></td> -->
+        <td><%= @eflashssd.pc1fat32 %></td>
+        <td><%= @eflashssd.pc1ntfs %></td>
+        <td><%= @eflashssd.pc1wboot %></td>
+        <td><%= @eflashssd.pc1cboot %></td>
+        <td><%= @eflashssd.pc1inos1 %></td>
+        <td><%= @eflashssd.pc1inos2 %></td>
+        <td><%= @eflashssd.pc1inos3 %></td>
+        <td><%= @eflashssd.pc1inos4 %></td>
+        <td><%= @eflashssd.pc1inos5 %></td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <!-- <td><%= @eflashssd.pc1exfat %></td> -->
+        <td><%= @eflashssd.pc1result %></td>
+</tr>
+</tbody>
+  <tbody>
+      <tr>
+        <td>2</th>
+        <td><%= @eflashssd.pc2os %></td>
+        <td><%= @eflashssd.pc2mb %></td>
+        <td><%= @eflashssd.pc2vendor  %></td>
+        <td><%= @eflashssd.pc2chip %></td>
+        <td><%= @eflashssd.pc2bios %></td>
+        <td><%= @eflashssd.pc2interface %></td>
+        <td><%= @eflashssd.pc2basic %></td>
+        <td><%= @eflashssd.pc2led %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%= @eflashssd.pc2inos1 %></td>
+        <td><%= @eflashssd.pc2inos2 %></td>
+        <td><%= @eflashssd.pc2inos3 %></td>
+        <td><%= @eflashssd.pc2inos4 %></td>
+        <td><%= @eflashssd.pc2inos5 %></td>
+        <td><%= @eflashssd.pc2inos6 %></td>
+        <td><%= @eflashssd.pc2inos7 %></td>
+        <td><%= @eflashssd.pc2inos8 %></td>
+        <td><%= @eflashssd.pc2result %></td>
+</tr>
+</tbody>
+  <tbody>
+      <tr>
+        <td>3</th>
+        <td><%= @eflashssd.pc3os %></td>
+        <td><%= @eflashssd.pc3mb %></td>
+        <td><%= @eflashssd.pc3vendor  %></td>
+        <td><%= @eflashssd.pc3chip %></td>
+        <td><%= @eflashssd.pc3bios %></td>
+        <td><%= @eflashssd.pc3interface %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+</tr>
+</tbody>
+
+
+<tbody>
+      <tr>
+        <td>4</th>
+        <td><%= @eflashssd.pc4os %></td>
+        <td><%= @eflashssd.pc4mb %></td>
+        <td><%= @eflashssd.pc4vendor  %></td>
+        <td><%= @eflashssd.pc4chip %></td>
+        <td><%= @eflashssd.pc4bios %></td>
+        <td><%= @eflashssd.pc3interface %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+        <td><%=  %></td>
+</tr>
+</tbody>
+</table>
+
+
+<table> 
+<h1>Crystaldiskmark</h1>
+
+<td><%= link_to image_tag(@eflashssd.image1.url(:large)), @eflashssd.image1.url %></td>
+
+<td><%= link_to image_tag(@eflashssd.image2.url(:large)), @eflashssd.image2.url %></td>
+
+<td><%= link_to image_tag(@eflashssd.image3.url(:large)), @eflashssd.image3.url %></td>
+</table>
+
+<font size= "20" ><%= link_to 'Edit', edit_eflashssd_path(@eflashssd) %></font> <font size= "20" >|</font>
+<font size= "20" ><%= link_to 'Back', eflashssds_path %></font>

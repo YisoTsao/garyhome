@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  receivedate: 2018-01-19
+  startdate: 2018-01-19
+  finishdate: 2018-01-19
+  solution: MyString
+  ftype: MyString
+  pccitem: 1
+  capacity: MyString
+  qual: MyString
+  owner: MyString
+  prodname: MyString
+  prodpn: MyString
+  fwvversion: MyText
+  desc: MyText
+  pcbvers: MyString
+  testres: MyString
+  rpname: MyString
+  rpdate: 2018-01-19
+  approvename: MyText
+  expl: MyText
+  remark: MyText
+
+two:
+  receivedate: 2018-01-19
+  startdate: 2018-01-19
+  finishdate: 2018-01-19
+  solution: MyString
+  ftype: MyString
+  pccitem: 1
+  capacity: MyString
+  qual: MyString
+  owner: MyString
+  prodname: MyString
+  prodpn: MyString
+  fwvversion: MyText
+  desc: MyText
+  pcbvers: MyString
+  testres: MyString
+  rpname: MyString
+  rpdate: 2018-01-19
+  approvename: MyText
+  expl: MyText
+  remark: MyText
