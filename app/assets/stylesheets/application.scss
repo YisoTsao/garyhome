@@ -27,10 +27,11 @@ background-color: #111;
 
 body{
 	padding-top: 40px;
-	padding-left: 20px;
 }
 
-
+.navbar-default{
+	border-color: #000000;
+}
 
 .navbar-default .navbar-nav > li > a{
 	color: #ffffff;
@@ -40,5 +41,9 @@ body{
 #indexbarcolor{
 	background-color: #444;
 	color: rgb(255, 176, 87);
+}
+.container-fluid {
+padding-left: 0px;
+padding-right: 0px;
 }
 

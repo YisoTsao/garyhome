@@ -1,20 +1,20 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.10.1"
 
-set :application, "quallist"
+set :application, "qtreportmysql-master"
 set :repo_url, "git@github.com:YisoTsao/qtreportmysql.git"
 
 append :linked_files, "config/database.yml", "config/secrets.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-
+	
 # Default deploy_to directory is /var/www/my_app_name
 #Deploy to Lindoe  
- #set :deploy_to, "/home/gary/qtreportmysql"
+ set :deploy_to, "/home/gary/qtreportmysql"
 
 #Deploy to QT server 
-set :deploy_to,"/home/deploy/quallist"
+#set :deploy_to,"/home/deploy/quallist"
 #set :passenger_restart_with_touch, true
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh

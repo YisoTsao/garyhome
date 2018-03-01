@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :contacts
+  resources :contacts  
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   get 'pages/home'

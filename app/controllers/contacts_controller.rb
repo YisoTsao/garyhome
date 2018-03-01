@@ -18,7 +18,7 @@ def create
 	@contact = Contact.new(contact_params)
 	respond_to do  |format|
 	if @contact.save
-		ContactMailer.registration_confimation(current_user,@contact).deliver
+		ContactMailer.registration_confimation(@contact).deliver
 		format.html{ redirect_to @contact, notice: 'Contact was successfully created.' }
 		format.json{ render :show , status: :created, location: @contact }
 	else
