@@ -20,4 +20,3 @@
 
 config/database.yml 
 config/secrets.yml 
-config/email.yml
