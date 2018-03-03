@@ -90,7 +90,7 @@ config.action_mailer.raise_delivery_errors = true
 
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.smtp_settings = config_for(:email).symbolize_keys
-config.action_mailer.default_url_options = { host: "http://garytsao-qtreport.tk" }
+config.action_mailer.default_url_options = { host: "http://garytsao-qtreport.tk/contacts" }
 
 
   # Do not dump schema after migrations.
