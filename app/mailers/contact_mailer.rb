@@ -7,11 +7,6 @@ default from: "'Gary'yiso05255@gmail.com"
   #
   def registration_confimation(contact)
     @contact = contact
-
     mail to: @contact.email, subject:  "Hi! 這是系統自動回覆信，我將盡快回覆您~謝謝!"
-    
   end
-
-
-
 end
