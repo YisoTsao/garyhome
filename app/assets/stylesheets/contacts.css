@@ -330,11 +330,11 @@ max-width:960px
         background: #2B3238;
     }
     
-      .login h1 { 
-      color: #fff;
-      letter-spacing: 1px; 
-      text-align: center;
-    }
+   .login h1 { 
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+  }
     
 
     .login { 
