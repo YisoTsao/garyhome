@@ -2,9 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.navbar.nav-down.navbar-default.navbar-fixed-top{
-	border-color: #000000;
-}
+
 #black-color{
 	background-color: #000;
 }
@@ -21,21 +19,24 @@
 }
 
 #bs-example-navbar-collapse-1{
-	margin-bottom: 0px;
+	
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .navbar.nav-down.navbar-default.navbar-fixed-top{
-	background-color: #000103;
-	border-color: #000000;
-	padding-top: 0px;
+	background-color: #000103;  
 }
 
+.navbar-fixed-top{
+  border-width: 0 0 0px;
+}
 .mx-auto.rounded-circle {
     border-radius: 50% !important;
 }
 
 #team {
-    background-color: #b2b0b5;
+    background-color: #cfcdd2;
 }
 
 .section-heading.text-uppercase {
@@ -138,9 +139,7 @@ header.masthead .intro-text .intro-heading {
 
 
 
-body{ 
-line-height:1
-}
+
 ol,ul{ 
 list-style:none 
 }
@@ -165,9 +164,7 @@ display:block
 body{ 
 background:#f0523f;overflow-x:hidden 
 }
-h1,h2,h3,h4,h5,h6{ 
-font-weight:bold;font-size:16px;margin:12px 0 
-}
+
 
 #slider{ 
 text-align:center 
@@ -326,3 +323,108 @@ max-width:960px
   }
  
  }
+
+
+
+ body {
+        background: #2B3238;
+    }
+    
+      .login h1 { color: #fff;
+       text-shadow: 0 0 10px rgba(0,0,0,0.3);
+      letter-spacing:1px; text-align:center; }
+    }
+
+    .login { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -150px;
+  width:300px;
+  height:300px;
+}
+
+div.login{
+background-color: rgba(3, 158, 149, 0.87);
+}
+    .loginbox {
+        width: 350px;
+        margin: auto;
+        height: 200px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    .loginbox input {
+        border: none;
+        background: #fff;
+        font-family: Lato;
+        font-weight: 700;
+        display: block;
+        height: 40px;
+        outline: none;
+        width: 100%;
+        margin: auto;
+        padding: 6px 12px 6px 12px;
+    }
+    .loginbox input[type="text"] {
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    .loginbox input[type="password"] {
+        border-radius: 0px 0px 5px 5px;
+    }
+    
+    .loginbox  input[type="submit"] {
+    background: #EA4C89;
+    border-radius: 10px;
+    width: 260px;
+    margin-left: 45px;   
+    border: solid 0px;
+  }
+
+
+    a.forgot_link {
+        color: #666;
+        text-decoration: none;
+        font-size: 11px;
+        position: relative;
+        left: 193px;
+        top: -31px;
+    }
+    a.forgot_link:hover {
+        text-decoration:none;
+        color: #111;
+        
+    }
+    
+    .loginbox button {
+        width: 100%;
+        border-radius: 5px;
+        background: #EA4C89;
+        text-decoration: center;
+        border: none;
+        color: #ffffff;
+        margin-top: -5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        outline: none;
+        font-size: 16px;
+        border-bottom: 3px solid #E8377E;
+        cursor: pointer;
+    }
+    .separtor {
+        width: 100%;
+        height: 1px;
+        background: #fff;
+    }
+    
+    .separtor i {
+        width: 95%;
+        margin: auto;
+        height: 1px;
+        display: block;
+        background: #d1d1d1;
+    }
+    
+    

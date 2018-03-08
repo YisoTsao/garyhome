@@ -11,18 +11,21 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :contact_name %>
+  <div class="loginbox">
+    <%= form.text_field :name, id: :contact_name , :type => 'text'  , :placeholder => 'name', :autofocus => true, :required => true  %>
+    
+
+  <div type="e-mail">
+    <%= form.text_field :email, id: :contact_email, :type => 'email'  , :placeholder => 'mail', :autofocus => true, :required => true  %>
   </div>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email, id: :contact_email %>
-  </div>
+<br>
 
-
-  <div class="actions">
-    <%= form.submit '送出' %>
-  </div>
+<div>
+<%= form.submit '送出'  %>  
+</div>
+ 
 <% end %>
+</div>
+
+
