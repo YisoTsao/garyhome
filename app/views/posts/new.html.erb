@@ -1,0 +1,31 @@
+<div class="container">
+           
+					<h2>New Page</h2>
+
+<% if @post.errors.any? %>
+<h2>Errors:</h2>
+<ul>
+<% @post.errors.full_messages.each do |message| %>
+	<li><%= message %></li>
+	<% end %>
+</ul>
+	<% end %>
+
+<%= form_for @post do |t| %>
+	<p>
+	<%= t.label  :title %> <br />
+	<%= t.text_field :title %>
+	</p>
+	<p>
+	<%= t.label :content %><br />
+	
+	<%= t.text_area :content %>
+<!-- <div class="fb-comments" data-href="https://ide.c9.io/gary525/garyblog" data-numposts="5"></div> -->
+
+	</p>
+	<p>
+	<%= t.submit "create post" %>
+	</p>
+	<% end %>
+	
+</div>
