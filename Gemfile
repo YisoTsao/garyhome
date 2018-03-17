@@ -49,7 +49,8 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'activeadmin'
 gem 'therubyracer' 
 gem "kaminari"
-gem 'ckeditor'
+gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'responders'
 
 
 group :development, :test do

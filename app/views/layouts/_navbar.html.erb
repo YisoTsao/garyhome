@@ -4,14 +4,14 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll"  >
                
-                <a class="navbar-brand" style="font-size: 35px;text-decoration:none;"<%= link_to "QT-報告產出系統 ",pages_home_path %></a>
+                <a class="navbar-brand" style="font-size: 35px;text-decoration:none;font-family: 'Cabin Sketch', cursive;"<%= link_to "Gary Web.  ",pages_home_path %></a>
             </div>
 
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
                 <ul class="nav navbar-nav navbar-right" >
-                   
+                    <li><%= link_to "Blog", posts_path %></li>
                     <li><%= link_to "Contact", new_contact_path %></li>
                     <li><%= link_to "Qt works", pages_home_path %></li>
     
@@ -32,4 +32,5 @@
         </div>
         <!-- /.container -->
     </nav>
+
 

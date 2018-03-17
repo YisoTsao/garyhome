@@ -1,6 +1,6 @@
-<div class="container">
+<div class="col-md-8  col-md-offset-2" style="margin-bottom: 150px;">
            
-					<h2>New Page</h2>
+					<h2>發表新的文章</h2>
 
 <% if @post.errors.any? %>
 <h2>Errors:</h2>
@@ -19,7 +19,10 @@
 	<p>
 	<%= t.label :content %><br />
 	
-	<%= t.text_area :content %>
+	<%= t.cktext_area :content  %>
+
+	
+
 <!-- <div class="fb-comments" data-href="https://ide.c9.io/gary525/garyblog" data-numposts="5"></div> -->
 
 	</p>

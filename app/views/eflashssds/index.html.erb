@@ -184,9 +184,9 @@
      
       <!-- -->
       <% if current_user  %>
-        <td><%= link_to 'Show', eflashssd , class: 'btn btn-mini btn-default' %></td>
-        <td><%= link_to 'Edit', edit_eflashssd_path(eflashssd) , class: 'btn btn-mini btn-primary' %></td>
-        <td><%= link_to 'Destroy', eflashssd, method: :delete, data: { confirm: 'Are you sure?' } , class: 'btn btn-mini btn-danger'%></td>
+        <td><%= link_to 'Show', eflashssd , class: 'btn btn-mini btn-default'  , :style => 'text-decoration:none;'%></td>
+        <td><%= link_to 'Edit', edit_eflashssd_path(eflashssd) , class: 'btn btn-mini btn-primary'  , :style => 'text-decoration:none;'%></td>
+        <td><%= link_to 'Destroy', eflashssd, method: :delete, data: { confirm: 'Are you sure?' } , class: 'btn btn-mini btn-danger' , :style => 'text-decoration:none;'%></td>
       </tr>
     <% end %>
         <% end %>
@@ -198,7 +198,7 @@
 <br>
 
 
-<%= link_to 'Create new item', new_eflashssd_path , class: 'btn btn-default'%> |
+<%= link_to 'Create new item', new_eflashssd_path , class: 'btn btn-default' , :style => 'text-decoration:none;'%> 
 
 
 <h3>Import CSV file</h3>
@@ -210,9 +210,12 @@
 
 
 <h3>Export file </h3>
-<%= link_to 'Download CSV', eflashssds_path(format: "csv") , class: 'btn btn-default'%> |
-<%= link_to "Download Excel", eflashssds_path(format: "xls") , class: 'btn btn-default'%>
+<%= link_to 'Download CSV', eflashssds_path(format: "csv") , class: 'btn btn-default' , :style => 'text-decoration:none;'%> |
+<%= link_to "Download Excel", eflashssds_path(format: "xls") , class: 'btn btn-default' , :style => 'text-decoration:none;'%>
 
 
 <br><br>
 
+<div style="margin-bottom: 150px;">
+  
+</div>

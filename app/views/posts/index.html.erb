@@ -1,26 +1,30 @@
 
-<!-- advertising start -->
+
 <header class="indexhead">
       <div class="container-fluid" >
         <div class="intro-text">
           
-          <div class="intro-heading text-uppercase" >It's Nice To Meet You</div>
-          <div class="intro-lead-in" >Always Ruby on rails !</div>
+          <div class="intro-heading text-center" >Gary Blog</div>
 
         </div>
       </div>
    
 </header>
+
+<div>
+<%= link_to "發表新文章", new_post_path,  class: 'btn btn-info', :style => 'margin: 10px; text-decoration:none;' %>
+</div>
+
+<div class="col-md-8  col-md-offset-2" style="margin-bottom: 150px;">
  <% @posts.each do |post| %>
-		<h2 class="post-title"><%= link_to post.title, post %></h2>
+		<h2 class="post-title" ><%= link_to post.title, post , :style =>'text-decoration:none;'%></h2>
 		<h3 class="post-subtitle"><%= post.content.html_safe %></h3>
         <% if user_signed_in? %>
-		<p><%= link_to "edit", edit_post_path(post) %>
-		 | <%= link_to("Delete", post,  method: :delete, data: { confirm: "Are you sure?" } )%></p>
+		<p><%= link_to "edit", edit_post_path(post),  class: 'btn btn-warning', :style => 'text-decoration:none;'  %>
+		 | <%= link_to("Delete", post,  method: :delete, data: { confirm: "Are you sure?" } ,  class: 'btn btn-danger', :style => 'text-decoration:none;' )%></p>
+		 
 		<% end %>
         <% end %>
 
-<% if user_signed_in? %>
 
-       <p><%= link_to "new post", new_post_path %></p>
-<% end %>
+</div>
