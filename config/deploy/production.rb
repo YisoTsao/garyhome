@@ -8,7 +8,7 @@
 # server "db.example.com", user: "deploy", roles: %w{db}
 set :stage , :production
 # Linode IP
-server 'garytsao-qtreport.tk', user: 'gary', roles: %w{app db web}
+server 'garytsao-rails.tk', user: 'gary', roles: %w{app db web}
 #server '139.162.111.15', user: 'gary', roles: %w{app db web}
 
 

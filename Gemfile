@@ -49,7 +49,7 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'activeadmin'
 gem 'therubyracer' 
 gem "kaminari"
-gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'ckeditor', github: 'galetahub/ckeditor' ##安裝最後一個版本才可上傳圖片
 gem 'responders'
 
 
