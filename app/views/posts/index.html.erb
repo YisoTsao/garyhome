@@ -11,9 +11,11 @@
    
 </header>
 
+<% if user_signed_in? %>
 <div>
 <%= link_to "發表新文章", new_post_path,  class: 'btn btn-info', :style => 'margin: 10px; text-decoration:none;' %>
 </div>
+<% end %>
 
 <div class="col-md-8  col-md-offset-2" style="margin-bottom: 150px;">
  <% @posts.each do |post| %>
