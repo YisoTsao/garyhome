@@ -20,6 +20,8 @@
 <div class="col-md-8  col-md-offset-2" style="margin-bottom: 150px;">
  <% @posts.each do |post| %>
 		<h2 class="post-title" ><%= link_to post.title, post , :style =>'text-decoration:none;'%></h2>
+    <h5><span class="glyphicon glyphicon-time">文章於<%= time_ago_in_words(post.created_at)%>
+    </span>前發佈</h5>
 		<h3 class="post-subtitle"><%= post.content.html_safe %></h3>
         <% if user_signed_in? %>
 		<p><%= link_to "edit", edit_post_path(post),  class: 'btn btn-warning', :style => 'text-decoration:none;'  %>
